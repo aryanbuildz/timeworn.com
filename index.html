@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TIMEWORN – Analog Watches</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav>
+ <a class="logo" href="index.html"><h3>TIMEWORN<h3></a>
+ <a href="#shop" data-go="shop">Shop</a>
+ <a href="#shop" data-go="shop">Categories</a>
+ <a href="#account" data-go="account">Login / Register</a>
+ <a href="cart.html">Cart (<span id="count">0</span>)</a>
+</nav></header>
+
+<main id="shop-view">
+ <div class="wrap">
+  <section class="hero"><h1>Time, made simple.</h1><p>Analog watches from the world's most trusted makers.</p></section>
+  <div class="cats" id="cats"></div>
+  <div class="grid" id="grid"></div>
+ </div>
+</main>
+
+<main id="account-view" class="hide">
+ <div class="auth">
+  <div class="tabs"><button class="on" data-tab="login">Login</button><button data-tab="reg">Register</button></div>
+  <form onsubmit="return false">
+   <div id="nameBox" class="hide"><label for="n">Full name</label><input id="n" autocomplete="name"></div>
+   <label for="e">Email</label><input id="e" type="email" autocomplete="email">
+   <label for="p">Password</label><input id="p" type="password">
+   <div id="cBox" class="hide"><label for="c">Confirm password</label><input id="c" type="password"></div>
+   <button class="btn" id="submit" type="button">Login</button>
+   <p id="msg"></p>
+  </form>
+ </div>
+</main>
+
+<footer>
+ <div class="links"><a href="index.html">Shop</a><a href="index.html#account">Account</a><a href="cart.html">Cart</a><span>Shipping</span><span>Returns</span></div>
+ <p>© 2026 TIMEWORN made by Aryan. Sample store for a web tech lab project.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
